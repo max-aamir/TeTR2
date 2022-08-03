@@ -76,12 +76,12 @@ def update_config(config, extra_config):
 def print_config(config):
     print('==========Options============')
     for k, v in config.items():
-		if k == 'exp_name' or k == 'batch_size' or k == 'lr' or k=='net':
-			print('{}: {}'.format(k, v))
-		if k == 'exp_name':
-			if v == 'Ctw1500':
-				print('N: 22')
-			else:
-				print('N: 18')
+	if k == 'exp_name' or k == 'batch_size' or k == 'lr' or k=='net':
+		print('{}: {}'.format(k, v))
+	if k == 'exp_name':
+		if v == 'Ctw1500':
+			print('N: 22')
+		else:
+			print('N: 18')
 
     print('=============End=============')
